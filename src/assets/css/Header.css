@@ -1,0 +1,91 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.nav {
+  position: sticky;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1F1717;
+  z-index: 20;
+}
+
+.logotype {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logotype__img {
+  height: 100%;
+}
+
+.nav__title {
+  margin: 0;
+  height: 100%;
+  background: #1F1717;
+  color: var(--green);
+  font-weight: 600;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.nav__icon {
+  padding: 10px;
+}
+
+.nav__svg {
+  cursor: pointer;
+  transition: opacity, scale .2s ease;
+  color: var(--green);
+}
+
+.nav__svg:hover {
+  opacity: .7;
+}
+
+.nav__svg:active {
+  opacity: .5;
+  scale: .9;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  height: 30vh;
+  background: #1F1717;
+  transition: transform .3s ease;
+  z-index: 11;
+  padding: 0;
+
+}
+
+.nav__item {
+  color: #efefef;
+  padding: 2px 1px;
+  border-bottom: 1px solid #efefef00;
+  cursor: pointer;
+  transition: border-color .3s ease;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.nav__item:hover {
+  border-color: #efefef;
+}
