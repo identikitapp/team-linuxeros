@@ -42,7 +42,7 @@ const Main = () => {
               <img src={cesped} alt="" />
             </div>
             <div className="main__cardtext">
-              <h3>Cesped</h3>  
+              <h3>Cesped</h3>
             </div>
           </article>
         </span>

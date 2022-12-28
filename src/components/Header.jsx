@@ -4,7 +4,7 @@ import logotype from '../assets/img/logo-favicon.svg'
 import { BiMenu, BiX } from 'react-icons/Bi'
 
 const showOrHide = (element, value, icon = null) => {
-  if (element === 'menu') return !value ? 'hidden__menu' : '';
+  if (element === 'menu') return !value ? 'hidden__menu' : ''
   if (element === 'icon') {
     if (!value) return icon === 'open' ? '' : 'hidden__icon'
     else return icon === 'open' ? 'hidden__icon' : ''
