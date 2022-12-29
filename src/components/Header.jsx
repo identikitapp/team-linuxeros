@@ -2,6 +2,7 @@ import '../assets/css/Header.css'
 import { useState } from 'react'
 import logotype from '../assets/img/logo-favicon.svg'
 import { BiMenu, BiX } from 'react-icons/Bi'
+import { Link } from 'react-router-dom'
 
 const showOrHide = (element, value, icon = null) => {
   if (element === 'menu') return !value ? 'hidden__menu' : ''
@@ -15,22 +16,42 @@ const Header = () => {
   const [hidden, setHidden] = useState(false)
 
   return (
-    <header className='header'>
-      <nav className='nav'>
-        <span className='logotype'>
-          <img src={logotype} alt="ecobella logo vivero" className='logotype__img' />
-          <h1 className='nav__title'>Ecobella</h1>
+    <header className="header">
+      <nav className="nav">
+        <span className="logotype">
+          <Link to={'/'}>
+            <img
+              src={logotype}
+              alt="ecobella logo vivero"
+              className="logotype__img"
+            />
+          </Link>
+          <h1 className="nav__title">Ecobella</h1>
         </span>
 
-        <span className='nav__icon'>
-          <BiMenu size='30px' onClick={() => setHidden(!hidden)} className={`nav__svg ${showOrHide('icon', hidden, 'open')}`} />
-          <BiX size='30px' onClick={() => setHidden(!hidden)} className={`nav__svg ${showOrHide('icon', hidden, 'close')}`} />
+        <span className="nav__icon">
+          <BiMenu
+            size="30px"
+            onClick={() => setHidden(!hidden)}
+            className={`nav__svg ${showOrHide('icon', hidden, 'open')}`}
+          />
+          <BiX
+            size="30px"
+            onClick={() => setHidden(!hidden)}
+            className={`nav__svg ${showOrHide('icon', hidden, 'close')}`}
+          />
         </span>
 
         <ul className={`nav__menu ${showOrHide('menu', hidden)}`}>
-          <li className="nav__item">Home</li>
-          <li className="nav__item">Products</li>
-          <li className="nav__item">Contact</li>
+          <li className="nav__item">
+            <Link to={'/'}>Home</Link>
+          </li>
+          <li className="nav__item">
+            <Link to={'/products'}>Products</Link>
+          </li>
+          <li className="nav__item">
+            <Link to={'/contact'}>Contact</Link>
+          </li>
         </ul>
       </nav>
     </header>
