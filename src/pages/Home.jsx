@@ -24,32 +24,30 @@ const Home = () => {
         </div>
       </section>
       <section className="main__img">
-        <span className="main__filter">
-          <article className="main__card">
-            <div className="main__imgcont">
-              <img src={planta} alt="" />
-            </div>
-            <div className="main__cardtext">
-              <h3>Plantas</h3>
-            </div>
-          </article>
-          <article className="main__card">
-            <div className="main__cardtext">
-              <h3>Macetas</h3>
-            </div>
-            <div className="main__imgcont">
-              <img src={macetas} alt="" />
-            </div>
-          </article>
-          <article className="main__card">
-            <div className="main__imgcont">
-              <img src={cesped} alt="" />
-            </div>
-            <div className="main__cardtext">
-              <h3>Cesped</h3>
-            </div>
-          </article>
-        </span>
+        <article className="main__card">
+          <div className="main__imgcont">
+            <img src={planta} alt="" />
+          </div>
+          <div className="main__cardtext">
+            <h3>Plantas</h3>
+          </div>
+        </article>
+        <article className="main__card">
+          <div className="main__cardtext">
+            <h3>Macetas</h3>
+          </div>
+          <div className="main__imgcont">
+            <img src={macetas} alt="" />
+          </div>
+        </article>
+        <article className="main__card">
+          <div className="main__imgcont">
+            <img src={cesped} alt="" />
+          </div>
+          <div className="main__cardtext">
+            <h3>Cesped</h3>
+          </div>
+        </article>
       </section>
     </main>
   )

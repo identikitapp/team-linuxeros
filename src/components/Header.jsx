@@ -13,7 +13,7 @@ const showOrHide = (element, value, icon = null) => {
 }
 
 const Header = () => {
-  const [hidden, setHidden] = useState(false)
+  const [show, setShow] = useState(false)
 
   return (
     <header className="header">
@@ -32,24 +32,24 @@ const Header = () => {
         <span className="nav__icon">
           <BiMenu
             size="30px"
-            onClick={() => setHidden(!hidden)}
-            className={`nav__svg ${showOrHide('icon', hidden, 'open')}`}
+            onClick={() => setShow(!show)}
+            className={`nav__svg ${showOrHide('icon', show, 'open')}`}
           />
           <BiX
             size="30px"
-            onClick={() => setHidden(!hidden)}
-            className={`nav__svg ${showOrHide('icon', hidden, 'close')}`}
+            onClick={() => setShow(!show)}
+            className={`nav__svg ${showOrHide('icon', show, 'close')}`}
           />
         </span>
 
-        <ul className={`nav__menu ${showOrHide('menu', hidden)}`}>
-          <li className="nav__item">
+        <ul className={`nav__menu ${showOrHide('menu', show)}`}>
+          <li className="nav__item" onClick={() => setShow(false)}>
             <Link to={'/'}>Home</Link>
           </li>
-          <li className="nav__item">
+          <li className="nav__item" onClick={() => setShow(false)}>
             <Link to={'/products'}>Products</Link>
           </li>
-          <li className="nav__item">
+          <li className="nav__item" onClick={() => setShow(false)}>
             <Link to={'/contact'}>Contact</Link>
           </li>
         </ul>
