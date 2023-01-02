@@ -2,13 +2,13 @@
   width: 100%;
   border-top: 1px solid #efefef;
   color: #a5a5a5;
-  font-size: .8rem;
+  font-size: 0.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
-  gap: .5rem;
+  padding: 0.625rem 0;
+  gap: 0.5rem;
 }
 
 .footer__info {
@@ -26,8 +26,8 @@
 }
 
 .footer__title {
-  margin-bottom: .3rem;
-  font-size: .9rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
   text-align: center;
   font-weight: 600;
   color: #efefef;
@@ -38,5 +38,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }

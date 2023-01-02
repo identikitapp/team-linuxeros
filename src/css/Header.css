@@ -2,7 +2,7 @@
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 2;
 }
 
 .nav {
@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   background: #1f1717;
-  z-index: 10;
+  z-index: 2;
 }
 
 .logotype {
@@ -25,7 +25,7 @@
 .logotype__img,
 .logotype a {
   height: 100%;
-  z-index: 20;
+  z-index: 2;
 }
 
 .nav__title {
@@ -35,7 +35,7 @@
   background: #1f1717;
   color: var(--green);
   font-weight: 600;
-  z-index: 20;
+  z-index: 2;
   display: flex;
   align-items: center;
 }
@@ -72,7 +72,7 @@
   height: 30vh;
   background: #1f1717;
   transition: transform 0.3s ease;
-  z-index: 11;
+  z-index: 1;
   padding: 0;
 }
 

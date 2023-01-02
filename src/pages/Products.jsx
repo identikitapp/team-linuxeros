@@ -1,4 +1,4 @@
-import '../assets/css/Products.css'
+import '../css/Products.css'
 import { AiFillFilter } from 'react-icons/ai'
 
 const Products = () => {
@@ -26,4 +26,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export { Products }

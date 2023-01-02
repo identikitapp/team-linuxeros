@@ -1,4 +1,4 @@
-import '../assets/css/Header.css'
+import '../css/Header.css'
 import { useState } from 'react'
 import logotype from '../assets/img/logo-favicon.svg'
 import { BiMenu, BiX } from 'react-icons/Bi'
@@ -20,26 +20,14 @@ const Header = () => {
       <nav className="nav">
         <span className="logotype">
           <Link to={'/'}>
-            <img
-              src={logotype}
-              alt="ecobella logo vivero"
-              className="logotype__img"
-            />
+            <img src={logotype} alt="ecobella logo vivero" className="logotype__img" />
           </Link>
           <h1 className="nav__title">Ecobella</h1>
         </span>
 
         <span className="nav__icon">
-          <BiMenu
-            size="30px"
-            onClick={() => setShow(!show)}
-            className={`nav__svg ${showOrHide('icon', show, 'open')}`}
-          />
-          <BiX
-            size="30px"
-            onClick={() => setShow(!show)}
-            className={`nav__svg ${showOrHide('icon', show, 'close')}`}
-          />
+          <BiMenu size="30px" onClick={() => setShow(!show)} className={`nav__svg ${showOrHide('icon', show, 'open')}`} />
+          <BiX size="30px" onClick={() => setShow(!show)} className={`nav__svg ${showOrHide('icon', show, 'close')}`} />
         </span>
 
         <ul className={`nav__menu ${showOrHide('menu', show)}`}>
@@ -58,4 +46,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export { Header }

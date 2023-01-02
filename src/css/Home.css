@@ -54,11 +54,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(
-      rgba(17, 17, 17, 0.7),
-      rgba(17, 17, 17, 0.7)
-    ),
-    url('../img/leaves-background.webp');
+  background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('../assets/img/leaves-background.webp');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

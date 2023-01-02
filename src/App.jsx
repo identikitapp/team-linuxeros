@@ -1,15 +1,13 @@
-import './assets/css/App.css'
-
-import Header from './components/Header'
-import Home from './pages/Home'
-import Products from './pages/Products'
-import Contact from './pages/Contact'
-import Footer from './components/Footer'
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Header } from './components/Header'
+import { Home } from './pages/Home'
+import { Products } from './pages/Products'
+import { Contact } from './pages/Contact'
+import { Footer } from './components/Footer'
 
 const App = () => {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,8 +15,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   )
 }
 
-export default App
+export { App }
