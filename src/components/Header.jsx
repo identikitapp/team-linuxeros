@@ -17,19 +17,13 @@ const Header = () => {
 
   return (
     <header className="header">
+      <span className="logotype">
+        <Link to={'/'}>
+          <img src={logotype} alt="ecobella logo vivero" className="logotype__img" />
+        </Link>
+        <h1 className="nav__title">Ecobella</h1>
+      </span>
       <nav className="nav">
-        <span className="logotype">
-          <Link to={'/'}>
-            <img src={logotype} alt="ecobella logo vivero" className="logotype__img" />
-          </Link>
-          <h1 className="nav__title">Ecobella</h1>
-        </span>
-
-        <span className="nav__icon">
-          <BiMenu size="30px" onClick={() => setShow(!show)} className={`nav__svg ${showOrHide('icon', show, 'open')}`} />
-          <BiX size="30px" onClick={() => setShow(!show)} className={`nav__svg ${showOrHide('icon', show, 'close')}`} />
-        </span>
-
         <ul className={`nav__menu ${showOrHide('menu', show)}`}>
           <li className="nav__item" onClick={() => setShow(false)}>
             <Link to={'/'}>Home</Link>
@@ -42,6 +36,10 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <span className="nav__icon">
+        <BiMenu size="30px" onClick={() => setShow(!show)} className={`nav__svg ${showOrHide('icon', show, 'open')}`} />
+        <BiX size="30px" onClick={() => setShow(!show)} className={`nav__svg ${showOrHide('icon', show, 'close')}`} />
+      </span>
     </header>
   )
 }

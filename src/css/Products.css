@@ -16,5 +16,5 @@
 }
 
 .sort__option {
-  color: #1f1717;
+  color: var(--grey);
 }

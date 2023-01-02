@@ -83,7 +83,7 @@
 .main__cardtext {
   height: 100%;
   width: 65%;
-  background: #1f1717;
+  background: var(--grey);
   display: flex;
   align-items: center;
   justify-content: center;
