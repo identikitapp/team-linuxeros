@@ -1,4 +1,4 @@
-import '../css/Footer.css'
+import './Footer.css'
 import { BsFacebook, BsInstagram, BsFillTelephoneFill, BsLink } from 'react-icons/bs'
 import { AiOutlineCopyrightCircle } from 'react-icons/ai'
 

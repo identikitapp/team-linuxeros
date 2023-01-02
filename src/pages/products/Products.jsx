@@ -1,4 +1,4 @@
-import '../css/Products.css'
+import './Products.css'
 import { AiFillFilter } from 'react-icons/ai'
 
 const Products = () => {

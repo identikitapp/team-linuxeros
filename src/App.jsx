@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Header } from './components/Header'
-import { Home } from './pages/Home'
-import { Products } from './pages/Products'
-import { Contact } from './pages/Contact'
-import { Footer } from './components/Footer'
+import { Header } from './components/header/Header'
+import { Home } from './pages/home/Home'
+import { Products } from './pages/products/Products'
+import { Contact } from './pages/contact/Contact'
+import { Footer } from './components/footer/Footer'
 
 const App = () => {
   return (

@@ -1,6 +1,5 @@
-import '../css/Header.css'
+import './Header.css'
 import { useState } from 'react'
-import logotype from '../assets/img/logo-favicon.svg'
 import { BiMenu, BiX } from 'react-icons/Bi'
 import { Link } from 'react-router-dom'
 
@@ -19,7 +18,7 @@ const Header = () => {
     <header className="header">
       <span className="logotype">
         <Link to={'/'}>
-          <img src={logotype} alt="ecobella logo vivero" className="logotype__img" />
+          <img src={'/img/logo-favicon.svg'} alt="ecobella logo vivero" className="logotype__img" />
         </Link>
         <h1 className="nav__title">Ecobella</h1>
       </span>
